@@ -1,0 +1,106 @@
+/* importing font that we need  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+  /* height: 100vh;
+  width: 100vw; */
+  background-color: #fbf8f1;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.cssreel {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+/* setting the font to the imported font */
+.cssreel h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25vmin;
+  line-height: 20vmin;
+
+  width: fit-content;
+  margin: 0%;
+  padding: 0%;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.gradient-text {
+  color: transparent;
+  background: conic-gradient(
+    #d9d7f1 12%,
+    #baabda 12%,
+    #baabda 33%,
+    #e7fbbe 33%,
+    #e7fbbe 55%,
+    #ffcbcb 55%,
+    #ffcbcb 70%,
+    #b5deff 70%,
+    #b5deff 87%,
+    #f7d1ba 87%
+  );
+  background-size: 25%;
+  background-clip: text;
+  /* this tells how far the background expands */
+  -webkit-background-clip: text;
+
+  animation: expand-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+.gradient-text:hover {
+  animation: expand 0.5s ease forwards;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 3250%;
+    background-position: -10em -4em;
+  }
+}
+
+@keyframes expand-rev {
+  0% {
+    background-size: 3250%;
+    background-position: -10em -4em;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+}
+
+.intro {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.intro h1 {
+  font-size: bold;
+}
