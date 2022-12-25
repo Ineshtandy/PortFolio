@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="welcome.css" />
+    <link rel="stylesheet" href="modal.css" />
   </head>
+
   <body>
     <div class="cssreel section">
       <h1 class="gradient-text">Hello <br />World!</h1>
@@ -34,13 +36,23 @@
     <div class="languageDescription section">
       <div class="subheading">
         <h3>Java</h3>
-        <p class="subcontent">
-          From what's inside my cup for morning coffee to what i code in while
-          competitive programming, i prefer java. I have been practising data
-          structutres and algorithms using java and tried to build a respectable
-          profile accordingly on online coding platforms such as leetcode and
-          codechef.
-        </p>
+        <button class="show-modal">Come on show up</button>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <div class="subcontent">
+            <p>
+              From what's inside my cup for morning coffee to what i code in
+              while competitive programming, i prefer java. I have been
+              practising data structutres and algorithms using java and tried to
+              build a respectable profile accordingly on online coding platforms
+              such as leetcode and codechef.
+            </p>
+            <img src="" alt="" />
+            <a href="www.google.com">link to Github</a>
+            <img src="" alt="" />
+            <a href=""></a>
+          </div>
+        </div>
       </div>
       <div class="subheading alternate">
         <h3>JavaScript</h3>
@@ -52,10 +64,7 @@
             Hence i started learning javascript from online resources and a made
             a few projects.
           </p>
-          <img
-            src="./Panigale-959-MY18-USA-04-Red-Slider-Gallery-906x510.jpg"
-            alt="bike pic"
-          />
+          <img src="" alt="" />
           <a href="www.google.com">link to Github</a>
           <img src="" alt="" />
           <a href=""></a>
@@ -137,5 +146,9 @@
       <div class="contacts">Github</div>
       <div class="contacts">Leetcode</div>
     </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
   </body>
 </html>
