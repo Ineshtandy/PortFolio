@@ -58,3 +58,20 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
+
+// event delegation based on event bubbling
+
+document
+  .querySelector(".languagesDisplay")
+  .addEventListener("click", function (el) {
+    console.log(el.target);
+
+    // matching strategy
+    if (el.target.classList.contains("nav-link")) {
+      const id = el.target.getAttribute("href");
+      console.log(id);
+      document.querySelector(`.${id}`).scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
