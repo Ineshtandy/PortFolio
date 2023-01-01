@@ -120,6 +120,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.nav-link {
+  cursor: pointer;
+}
 
 .lang_subdisplay {
   display: flex;
@@ -132,8 +135,22 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* .languageDescription p {
+  display: block;
+  width: 50%;
+  margin: 1rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.subheading p {
+  display: block;
+  width: 50%;
+  margin: 1rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .subheading h3 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .alternate h3 {
   display: flex;
@@ -167,4 +184,5 @@ body {
 
 .contacts {
   padding: 0rem 1rem;
+  cursor: pointer;
 }
