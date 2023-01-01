@@ -59,12 +59,11 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// event delegation based on event bubbling
-
+// event delegation based on event bubbling (lang display navigation)
 document
   .querySelector(".languagesDisplay")
   .addEventListener("click", function (el) {
-    console.log(el.target);
+    el.preventDefault();
 
     // matching strategy
     if (el.target.classList.contains("nav-link")) {
@@ -73,5 +72,17 @@ document
       document.querySelector(`.${id}`).scrollIntoView({
         behavior: "smooth",
       });
+    }
+  });
+
+document
+  .querySelector(".contactsSection")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (e.target.classList.contains("contacts")) {
+      const id = e.target.getAttribute("href");
+      //opens a new window
+      window.open(id, "_blank");
     }
   });
