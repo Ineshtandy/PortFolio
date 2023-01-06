@@ -4,6 +4,7 @@ const modal = document.querySelectorAll(".modal");
 const overlay = document.querySelector(".overlay");
 const btnsCloseModal = document.querySelectorAll(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
+const btnsProjectLink = document.querySelectorAll(".project-link");
 
 // const openModal = function () {
 //   modal.classList.remove("hidden");
@@ -86,3 +87,12 @@ document
       window.open(id, "_blank");
     }
   });
+
+for (let i = 0; i < btnsProjectLink.length; i++) {
+  btnsProjectLink[i].addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const id = e.target.getAttribute("href");
+    window.open(id, "_blank");
+  });
+}
