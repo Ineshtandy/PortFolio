@@ -57,9 +57,3 @@
   backdrop-filter: blur(3px);
   z-index: 5;
 }
-
-.slide {
-  display: flex;
-  overflow-y: auto;
-  flex-wrap: nowrap;
-}
